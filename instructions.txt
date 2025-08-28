@@ -1,0 +1,28 @@
+Instructions for QR Code Generator
+
+This script generates a QR code from a given URL and saves it as both PNG and SVG files.
+
+Prerequisites:
+- Python 3
+
+Instructions:
+
+1. Open your terminal.
+
+2. Create a virtual environment to install the necessary libraries:
+   python3 -m venv venv
+
+3. Activate the virtual environment:
+   source venv/bin/activate
+
+   **IMPORTANT:** You **MUST** activate the virtual environment in your terminal session before running the script to avoid a `ModuleNotFoundError`.
+
+4. Install the required libraries:
+   pip install qrcode[pil]
+
+5. Run the script with the desired URL:
+   python qr_generator.py "your_url_here"
+
+   Replace "your_url_here" with the URL you want to generate a QR code for.
+
+6. The QR codes will be saved in the same directory as the script.
